@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css" />
 	<title>Reservia</title>
+	<script src="https://kit.fontawesome.com/f7fed9b62b.js" crossorigin="anonymous"></script>
 	<!-- TODO: ajout fav + metas -->
 </head>
 
@@ -29,12 +30,30 @@
 				<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 				<p>En plein centre ville ou en pleine nature</p>
 				<form method="POST" action="#">
-					<span class="position"><i class=""></i></span>
-					<input type="text" name="ville" id="ville" placeholder="Marseille, France">
+					<label class ="icon">
+						<i class="fas fa-map-marker-alt"></i>
+					</label>
+						<span class="position"><i class=""></i></span>
+							<input type="text" name="ville" id="ville" placeholder="Marseille, France">
 					<button type="submit" value="Rechercher" id="button">Rechercher</button>
 				</form>
 			</div>
 		</section>
+
+		<!----------Filtres--------->
+
+		<div id ="lignedefiltres">
+			<div class="listefiltres">
+				<div class="titrefiltre">Filtres</div>
+				<div class="bordure">
+					<i class="fas fa-money-bill-wave-alt"></i>
+					<div class="nomdufiltre">Economique</div>
+				</div>
+			</div>
+		</div>
+
+
+
 	</div>
 </body>
 

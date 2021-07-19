@@ -34,6 +34,8 @@ body
     padding: 4px 30px 0px 30px;
     text-align: justify;
     line-height: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -44,25 +46,41 @@ header
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 120px;
 }
 
 #menu 
 {
     position: relative;
     display: flex;
+    padding: 0;
+    height: 100%;
+    align-items: center;
 }
 
 #menu a:hover
 {
-	text-decoration: overline;
+	border-top: solid 2px;
 	color: #0065FC;
+	align-items: center;
+}
+
+.menu-item
+{
+	height: 100%;
+	display: flex;
+
 }
 
 .menu-item a {
-    padding-top: 30px;	
+    	
     margin-right: 60px;
     color: black;
     text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
  
 .menu-item-cta a
@@ -106,6 +124,17 @@ p
     margin-bottom: 10px;
 }
 
+.icon
+{
+	padding: 10px 10px 10px 20px;
+    width: 50px;
+    height: 40px;
+    background: #F2F2F2;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    margin-bottom: 10px;
+}
+
 #button
 {
 	color: white;
@@ -126,4 +155,59 @@ p
     height: 40px;
     padding-left: 10px;
     letter-spacing: 1px;
+}
+
+
+/**********Les filtres**********/
+
+#lignedefiltres
+{
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.titrefiltre
+{
+	margin-top: 10px;
+    font-weight: bolder;
+}
+
+.listefiltres
+{
+	display: flex;
+    margin-left: 20px;
+}
+
+.listefiltres i
+{
+    background: #DEEBFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+	
+
+.nomdufiltre
+{
+	margin-left: 10px;
+	margin-right: 20px;
+	margin-top: 10px;
+	font-weight: bolder;
+}
+
+.bordure
+{
+	border: 2px solid #F2F2F2;
+	position: relative;
+	display: flex;
+	margin-left: 10px;
+	border-left: transparent;
+	border-radius: 25px;
+	min-width: max-content;
 }
