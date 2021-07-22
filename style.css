@@ -121,7 +121,7 @@ p
     font-size: small;
     font-weight: normal;
     letter-spacing: normal;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .icon
@@ -177,10 +177,12 @@ p
 {
 	display: flex;
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 .listefiltres i
 {
+	color: #0065FC;
     background: #DEEBFF;
     width: 40px;
     height: 40px;
@@ -190,18 +192,15 @@ p
     align-items: center;
 }
 
-
-	
-
-.nomdufiltre
+.nomdufiltre_e, .nomdufiltre_f, .nomdufiltre_r, .nomdufiltre_aa
 {
 	margin-left: 10px;
 	margin-right: 20px;
 	margin-top: 10px;
 	font-weight: bolder;
 }
-
-.bordure
+	
+.bordure_e, .bordure_f, .bordure_r, .bordure_aa
 {
 	border: 2px solid #F2F2F2;
 	position: relative;
@@ -210,4 +209,201 @@ p
 	border-left: transparent;
 	border-radius: 25px;
 	min-width: max-content;
+}
+
+#information
+{
+	display: flex;
+	margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#information i
+{
+	color: #0065FC;
+    border: 1px solid #CCC;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#information p
+{
+	margin:  0px 10px 10px 10px;
+}
+
+/**********Hébergements**********/
+
+#hebergements
+{
+	display: flex;
+	justify-content: space-between;
+	height: 70%;
+}
+
+.heberge
+{
+	background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.Marseille
+{
+	display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.ligne_1, .ligne_2
+{
+	display: flex;
+}
+
+.blocdelacannebiere, .blocduport, .blocmouettes, .blocdelamer, .bloclepanier, .blocamina
+{
+	display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+
+.images
+{
+	width: auto;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    height: 120px;
+    width: 252px;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.description
+{
+	text-align: left;
+    padding: 10px;
+}
+
+.nomhotel
+{
+	font-weight: bolder;
+	margin-bottom: 20px;
+}
+
+.prix
+{
+	font-size: small;
+    font-weight: normal;
+    letter-spacing: normal;
+    margin-bottom: -10px;
+}
+
+a
+{
+	color: black;
+	text-decoration: none;
+}
+
+.etoiles
+{
+	display: flex;
+	padding-left: 10px;
+}
+
+.bluestar
+{
+	color: #0065FC;
+}
+
+.greystar
+{
+	color: #F2F2F2;
+}
+
+h3 
+{
+	margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+/**********Les plus populaires**********/
+
+.blocpopulaires
+{
+	margin: 20px;
+	margin-top: 5px;
+}
+
+.populaires
+{
+	background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 20px;
+    width: 35%;
+}
+
+.titrepopulaires
+{
+	display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-bottom: -13px;
+}
+
+.blocsoleilmatin, .bloccoeureau, .blocbleublanc
+{
+	display: flex;
+    align-items: center;
+    background-color: white;
+    padding-right: 5px;
+    border-radius: 10px;
+    margin-bottom: 43px;
+    margin-top: 5px;
+}
+
+.imagespopulaires
+{
+	height: 150px;
+    width: 150px;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+}
+
+.description_populaires
+{
+	text-align: left;
+    padding: 10px;
+}
+
+.nomhotel_populaires
+{
+	font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.etoiles_populaires
+{
+	display: flex;
+	margin-top: 10px;
+    margin-bottom: -18px;
 }
