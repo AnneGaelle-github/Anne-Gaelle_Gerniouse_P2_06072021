@@ -47,6 +47,79 @@ body
     .bordure_e, .bordure_f, .bordure_r, .bordure_aa {
         margin-top: 15px;
     }
+}
+
+@media screen and (max-width: 725px)
+{
+    #bloc_page{
+        padding: 0px;
+    }
+
+    /**********Responsive Hébergements**********/
+
+    #hebergements{
+        flex-direction: column;
+        width: 100%;
+    }
+    .heberge{
+        flex-direction: column;
+        width: 100%;
+    }
+    .ligne_1, .ligne_2{
+        flex-direction: column;
+        width: 100%;
+    }
+    .blocdelacannebiere, .blocduport, .blocmouettes, .blocdelamer, .bloclepanier, .blocamina{
+        height: 260px;
+        width: 274%;
+        margin-bottom: 43px;
+    }
+
+
+    /**********Responsive Activités**********/
+
+    .titreactivite{
+        margin-left: 28px;
+    }
+    .imagesactivites{
+        flex-direction: column;
+    }
+    .grandeimage {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .petiteimage{
+        margin-bottom: 40px;
+        height: 340px;
+    }
+    .blocvieuxport, .bloccalanques{
+        flex-direction: column;
+        width: 385%;
+        height: 430px;
+        margin-top: 25px;
+    }
+    .blocpomegues, .blocfrioul, .blocnotredame, .bloclongchamp{
+        width: 385%;
+        margin-top: 25px;
+    }
+    .colonne_1.w-25, .colonne_2.w-25{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    /**********Responsive Footer**********/
+
+    .bloc_colonne{
+        flex-direction: column;
+    }
+    .colonne_propos, .colonne_hebergements, .colonne_assistance{
+        justify-content: center;
+    }
+    .titrefooter, .liste{
+        text-align: center;
+
+    }
 
 }
 
@@ -139,8 +212,9 @@ header
         display: block;
         background-color: #F2F2F2;
         margin: 0;
+        display: none;
     }
-    #toggle:checked + #menu{
+    .input:checked + #menu{
         display: block;
     }
     .navi
@@ -344,7 +418,6 @@ p
     padding: 5px;
     border-radius: 10px;
     margin-left: 20px;
-    margin-bottom: 2px;
     margin-top: 10px;
 }
 
@@ -501,6 +574,7 @@ a
 .titreactivite
 {
 	margin-bottom: 20px;
+    margin-left: 5px;
 }
 
 .imagesactivites
@@ -532,7 +606,6 @@ a
     background-color: white;
     padding: 5px;
     border-radius: 10px;
-    margin-left: 5px;
     margin-bottom: 10px;
     box-shadow: 5px 5px 5px #f2f2f2;
 }
